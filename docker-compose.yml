@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  adp_config_server:
+    container_name: adp_base_service
+    image: docker-registry2dc.platform3solutions.com/adp/lwa-base-service:april2022
+    expose:
+      - 5656
+    ports:
+      - 5656:5656
+    env_file:
+      - base.env

@@ -1,11 +1,11 @@
 server:
-  port: 5656
+  port: ${server.port:5656}
 spring:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: ${ddl.auto:update}
   datasource:
-    url: jdbc:mysql://localhost:3306/file
-    username: root
-    password: root
-    driver-class-name: com.mysql.jdbc.Driver
+    url: ${datasource.url:jdbc:mysql://localhost:3306/file}
+    username: ${datasource.username:root}
+    password: ${datasource.password:root}
+    driver-class-name: ${driver.class.name:com.mysql.jdbc.Driver}
