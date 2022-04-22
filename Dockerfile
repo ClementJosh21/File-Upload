@@ -4,7 +4,7 @@ VOLUME /tmp
 
 ARG PORT=5656
 
-ARG DEMO_SERVICE_JAR=./build/libs/demo-0.0.1-SNAPSHOT-plain.jar
+ARG DEMO_SERVICE_JAR=./build/libs/demo-0.0.1-SNAPSHOT.jar
 
 COPY ${DEMO_SERVICE_JAR} demo-service.sh /tmp/
 

@@ -1,5 +1,5 @@
 server:
-  port: ${server.port:5656}
+  port: ${port:5656}
 spring:
   jpa:
     hibernate:

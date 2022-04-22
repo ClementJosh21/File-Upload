@@ -2,7 +2,7 @@ version: '3.7'
 services:
   adp_config_server:
     container_name: adp_demo_service
-    image: docker-registry2dc.platform3solutions.com/adp/demo-service:april2022
+    image: docker-registry2dc.platform3solutions.com/adp/demo-service:april222022
     expose:
       - 5656
     ports:
